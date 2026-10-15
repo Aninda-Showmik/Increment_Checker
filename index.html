@@ -130,6 +130,8 @@ h+='<div class="line"><span>New basic ('+(bf*100)+'% of gross)</span><span>'+fmt
 h+='<div class="line"><span>Bonus difference ('+B+' x extra basic)</span><span>'+fmt(inc*bf*B)+'</span></div>';
 h+='<div class="line"><span>Monthly increase</span><span>'+fmt(inc)+'</span></div>';
 h+='<div class="line"><span>New monthly gross</span><span>'+fmt(G+inc)+'</span></div>';
+h+='<div class="line"><span>Old salary after PF</span><span>'+fmt(G*keep)+'</span></div>';
+h+='<div class="line"><span>New salary after PF</span><span>'+fmt((G+inc)*keep)+'</span></div>';
 h+='<div class="line"><span>Arrears before PF ('+M+' months)</span><span>'+fmt(grossArr)+'</span></div>';
 h+='<div class="line"><span>PF deducted on arrears</span><span>'+fmt(pfCut)+'</span></div>';
 h+='<div class="line"><span>Salary arrears after PF</span><span>'+fmt(grossArr-pfCut)+'</span></div>';
